@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>EMoon</title>
+        <link rel="shortcut icon" href="./resources/moon.ico">
+    </head>
+
+    <body>
+        <center>
+            <div id="top" >
+                    <div class="header">
+                        <div class="serchArea">
+                            <input type="text" id="input_text" placeholder="搜索" autocomplete="on" onkeypress="if(event.keyCode==13) {useLastSearchEngine();}">
+                            <div class="btn_search">
+                                <button type="button" id="BingSearch" onclick="searchByBing()">必应</button>
+                                <button type="button" id="BaiduSearch" onclick="searchByBaidu()">百度</button>
+                                <button type="button" id="SogouSearch" onclick="searchBySogou()">搜狗</button>
+                                <button type="button" id="GoogleSearch" onclick="searchByGoogle()">谷歌</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </center>
+        
+    </body>
+
+</head>
