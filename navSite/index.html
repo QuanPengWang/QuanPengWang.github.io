@@ -1,28 +1,430 @@
 <!DOCTYPE html>
 
 <html>
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>EMoon</title>
-        <link rel="shortcut icon" href="./resources/moon.ico">
-        <link rel="stylesheet" href="./resources/style.css">
-		<script type="text/javascript" src="./resources/search.js"></script>	
-    </head>
 
-    <body>
-        <div id="top">
-            <div class="header">
-                <div class="serchArea">
-                    <input type="text" id="input_text" placeholder="搜索" autocomplete="on" onkeypress="if(event.keyCode==13) {useLastSearchEngine();}">
-                    <div class="btn_search">
-                        <button type="button" id="searchBtn1" onclick="searchByBing()">必应</button>
-                        <button type="button" id="searchBtn2" onclick="searchByBaidu()">百度</button>
-                        <button type="button" id="searchBtn3" onclick="searchBySogou()">搜狗</button>
-                        <button type="button" id="searchBtn4" onclick="searchByHaosou()">好搜</button>
-                        <button type="button" id="searchBtn5" onclick="searchByGoogle()">谷歌</button>
-                    </div>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>EMoon</title>
+    <link rel="shortcut icon" href="./resources/moon.ico">
+    <link rel="stylesheet" href="./resources/style.css">
+    <script type="text/javascript" src="./resources/search.js"></script>
+</head>
+
+<body>
+    <div id="top">
+        <div class="header">
+            <div class="serchArea">
+                <input type="text" id="input_text" placeholder="搜索" autocomplete="on"
+                    onkeypress="if(event.keyCode==13) {useLastSearchEngine();}">
+                <div class="btn_search">
+                    <button type="button" id="searchBtn1" onclick="searchByBing()">必应</button>
+                    <button type="button" id="searchBtn2" onclick="searchByBaidu()">百度</button>
+                    <button type="button" id="searchBtn3" onclick="searchBySogou()">搜狗</button>
+                    <button type="button" id="searchBtn4" onclick="searchByHaosou()">好搜</button>
+                    <button type="button" id="searchBtn5" onclick="searchByGoogle()">谷歌</button>
                 </div>
             </div>
-        </div>        
-    </body>
+        </div>
+    </div>
 
-</head>
+    <div id="shenghuo" class="zhutikuang clearfix" style="margin-top: 20px;">
+        <div class="tab"><span><i class="icon-star-empty"></i> 生活休闲</span>
+            <ul class="clearfix">
+                <li class="current">便携生活</li>
+                <li class="">购 物</li>
+                <li class="">视 频</li>
+                <li class="">社 区</li>
+                <li class="">游 戏</li>
+                <li class="">新闻报刊</li>
+                <li class="">IT资讯</li>
+            </ul>
+        </div>
+        <div class="sites-details clearfix">
+            <div class="show" style="display: block;">
+                <ul class="ul-content">
+                    <li><a href="http://www.12306.cn/" target="_blank">12306</a>
+                    </li>
+                    <li><a href="http://www.todayonhistory.com/" target="_blank">历史上的今天</a>
+                    </li>
+                    <li><a href="http://www.ip138.com/" target="_blank">ip查询</a>
+                    </li>
+                    <li><a href="http://hao.360.cn/rili/" target="_blank">万年历</a>
+                    </li>
+                    <li><a href="https://pan.baidu.com/" target="_blank">百度网盘</a>
+                    </li>
+                    <li><a href="http://map.baidu.com/" target="_blank">百度地图</a>
+                    </li>
+                    <li><a href="http://ditu.amap.com/" target="_blank">高德地图</a>
+                    </li>
+                    <li><a href="http://vip.ifkdy.com/" target="_blank">vip视频解析</a>
+                    </li>
+                    <li><a href="http://www.bilibili.com/" target="_blank">哔哩哔哩</a>
+                    </li>
+                    <li><a href="https://www.pixiv.net/" target="_blank">pixiv</a>
+                    </li>
+                    <li><a href="https://www.tumblr.com/" target="_blank">tumblr</a>
+                    </li>
+                    <li><a href="https://twitter.com/" target="_blank">twitter</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div style="display: none;">
+                <ul class="ul-content">
+                    <li><a href="http://lolbaicai.com/" target="_blank">LOL白菜</a>
+                    </li>
+                    <li><a href="https://www.jd.com/" target="_blank">京 东</a>
+                    </li>
+                    <li><a href="http://miaosha.jd.com/" target="_blank">京东秒杀</a>
+                    </li>
+                    <li><a href="https://www.taobao.com/" target="_blank">淘 宝</a>
+                    </li>
+                    <li><a href="https://qiang.taobao.com/" target="_blank">淘抢购</a>
+                    </li>
+                    <li><a href="https://www.tmall.com/" target="_blank">天 猫</a>
+                    </li>
+                    <li><a href="https://www.amazon.cn/" target="_blank">亚马逊</a>
+                    </li>
+                    <li><a href="http://www.vip.com/" target="_blank">唯品会</a>
+                    </li>
+                    <li><a href="http://www.kaola.com/" target="_blank">网易考拉海购</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="display: none;">
+                <ul class="ul-content">
+                    <li><a href="https://www.iqiyi.com/" target="_blank">爱奇艺</a>
+                    </li>
+                    <li><a href="https://www.youku.com/" target="_blank">优 酷</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="display: none;">
+                <ul class="ul-content">
+                    <li><a href="http://weibo.com/" target="_blank">新浪微博</a>
+                    </li>
+                    <li><a href="https://qzone.qq.com/" target="_blank">QQ空间</a>
+                    </li>
+                    <li><a href="http://www.lofter.com/" target="_blank">lofter</a>
+                    </li>
+                    <li><a href="https://www.zhihu.com/" target="_blank">知乎</a>
+                    </li>
+                    <li><a href="https://www.douban.com/" target="_blank">豆瓣</a>
+                    </li>
+                    <li><a href="http://www.jianshu.com/" target="_blank">简书</a>
+                    </li>
+                    <li><a href="http://www.tianya.cn/" target="_blank">天涯</a>
+                    </li>
+                    <li><a href="http://dzh.mop.com/" target="_blank">猫扑</a>
+                    </li>
+                    <li><a href="https://www.chiphell.com/" target="_blank">Chiphell</a>
+                    </li>
+                    <li><a href="http://www.qiushibaike.com/" target="_blank">糗事百科</a>
+                    </li>
+                    <li><a href="http://www.u148.net/" target="_blank">有意思吧</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="display: none;">
+                <ul class="ul-content">
+                    <li><a href="http://www.gamersky.com/" target="_blank">游民星空</a>
+                    </li>
+                    <li><a href="http://www.3dmgame.com/" target="_blank">3 D M</a>
+                    </li>
+                    <li><a href="http://www.ali213.net/" target="_blank">游侠网</a>
+                    </li>
+                    <li><a href="http://www.chafanhou.com/" target="_blank">茶饭后</a>
+                    </li>
+                    <li><a href="http://www.indieace.com/" target="_blank">IndieACE</a>
+                    </li>
+                    <li><a href="http://gameflow.cc/" target="_blank">GameFlow</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="display: none;">
+                <ul class="ul-content">
+                    <li><a href="http://news.163.com/" target="_blank">网易新闻</a>
+                    </li>
+                    <li><a href="http://news.ifeng.com/" target="_blank">凤凰资讯</a>
+                    </li>
+                    <li><a href="http://www.toutiao.com/" target="_blank">今日头条</a>
+                    </li>
+                    <li><a href="http://news.qq.com/" target="_blank">腾讯新闻</a>
+                    </li>
+                    <li><a href="http://www.xinhuanet.com/" target="_blank">新华网</a>
+                    </li>
+                    <li><a href="http://www.huanqiu.com/" target="_blank">环球网</a>
+                    </li>
+                    <li><a href="http://www.zaobao.com/" target="_blank">联合早报网</a>
+                    </li>
+                    <li><a href="http://www.youth.cn/" target="_blank">中国青年网</a>
+                    </li>
+                    <li><a href="http://news.sina.com.cn/" target="_blank">新浪新闻</a>
+                    </li>
+                    <li><a href="http://www.infzm.com/" target="_blank">南方周末</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="display: none;">
+                <ul class="ul-content">
+                    <li><a href="http://www.ithome.com/" target="_blank">IT之家</a>
+                    </li>
+                    <li><a href="http://www.cnbeta.com/" target="_blank">cnBeta</a>
+                    </li>
+                    <li><a href="http://www.ifanr.com/" target="_blank">爱范儿</a>
+                    </li>
+                    <li><a href="http://36kr.com/" target="_blank">36 氪</a>
+                    </li>
+                    <li><a href="http://www.geekpark.net/" target="_blank">极客公园</a>
+                    </li>
+                    <li><a href="http://tech.sina.com.cn/" target="_blank">新浪科技</a>
+                    </li>
+                    <li><a href="http://tech.qq.com/" target="_blank">腾讯科技</a>
+                    </li>
+                    <li><a href="http://www.zol.com.cn/" target="_blank">中关村在线</a>
+                    </li>
+
+                    <li><a href="https://madbrief.com/" target="_blank">疯狂简报</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="wangpan" class="zhutikuang clearfix">
+        <div class="tab"><span><i class="icon-search"></i> 资源搜索</span>
+            <ul class="clearfix">
+                <li class="current">网盘搜索</li>
+                <li>BT搜索</li>
+                <li>图片搜索</li>
+            </ul>
+        </div>
+        <div class="sites-details clearfix">
+            <div class="show">
+                <ul class="ul-content">
+                    <li><a href="http://ilxdh.com/diypassword.html" target="_blank">网盘自定义密码</a>
+                    </li>
+                    <li><a href="http://www.quzhuanpan.com/" target="_blank">去转盘网</a>
+                    </li>
+                    <li><a href="https://www.panc.cc/" target="_blank">胖次搜索</a>
+                    </li>
+                    <li><a href="https://so.ygyhg.com/" target="_blank">天天云搜</a>
+                    </li>
+                    <li><a href="http://md5.daimugua.com/" target="_blank">呆木瓜</a>
+                    </li>
+                    <li><a href="http://wangpan007.com/" target="_blank">网盘007</a>
+                    </li>
+                    <li><a href="http://www.wodepan.com/" target="_blank">我的盘</a>
+                    </li>
+                    <li><a href="http://www.bdsola.com/newfile.php?Type=ALL" target="_blank">网盘搜啦</a>
+                    </li>
+                    <li><a href="http://www.tuoniao.me/" target="_blank">鸵鸟搜索</a>
+                    </li>
+                    <li><a href="http://www.sobaidupan.com/" target="_blank">搜百度盘</a>
+                    </li>
+                    <li><a href="http://www.tebaidu.com/" target="_blank">特百度</a>
+                    </li>
+                    <li><a href="http://www.panduoduo.net/" target="_blank">盘多多</a>
+                    </li>
+                    <li><a href="http://www.pansou.com/" target="_blank">盘 搜</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul-content">
+                    <li><a href="https://apiv.ga/magnet/" target="_blank">九秒磁力在线播</a>
+                    </li>
+                    <li><a href="http://magnet.chongbuluo.com/" target="_blank">虫部落磁力</a>
+                    </li>
+                    <li><a href="http://btkitty.kim/" target="_blank">BT kitty</a>
+                    </li>
+                    <li><a href="http://www.cilisoba.net/" target="_blank">CiCiBaBa</a>
+                    </li>
+                    <li><a href="http://www.btcherry.info/" target="_blank">BT樱桃</a>
+                    </li>
+                    <li><a href="http://cililian.me/" target="_blank">cililian</a>
+                    </li>
+                    <li><a href="http://btlibrary.co/" target="_blank">btlibrary</a>
+                    </li>
+                    <li><a href="https://btdigg.org/" target="_blank">btdigg</a>
+                    </li>
+                    <li><a href="http://www.runbt.cc/" target="_blank">runbt</a>
+                    </li>
+                    <li><a href="http://www.btyunsou.net/" target="_blank">BT云搜</a>
+                    </li>
+                    <li><a href="http://diggbt.ws/" target="_blank">Diggbt</a>
+                    </li>
+                    <li><a href="http://www.btmeet.org/" target="_blank">BTbook</a>
+                    </li>
+                    <li><a href="http://www.btkuaisou.org/" target="_blank">BT快搜</a>
+                    </li>
+                    <li><a href="http://www.btanb.com/" target="_blank">bt蚂蚁</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul-content">
+                    <li class="small-category">常用图片</li>
+                    <li><a href="http://image.chongbuluo.com/" target="_blank">虫部落图搜</a>
+                    </li>
+                    <li><a href="http://image.baidu.com/" target="_blank">百度图片</a>
+                    </li>
+                    <li><a href="http://cn.bing.com/images" target="_blank">必应图片</a>
+                    </li>
+                    <li><a href="http://image.so.com/" target="_blank">好搜图片</a>
+                    </li>
+                    <li><a href="http://pic.sogou.com/" target="_blank">搜狗图片</a>
+                    </li>
+                    <li><a href="http://images.search.yahoo.com/" target="_blank">YAHOO</a>
+                    </li>
+                    <li class="small-category">以图搜图</li>
+                    <li><a href="https://www.google.com/imghp" target="_blank">Google识图</a>
+                    </li>
+                    <li><a href="http://image.baidu.com/?fr=shitu" target="_blank">百度识图</a>
+                    </li>
+                    <li><a href="https://www.tineye.com/" target="_blank">TinEye</a>
+                    </li>
+                    <li><a href="http://st.so.com/" target="_blank">好搜识图</a>
+                    </li>
+                    <li><a href="http://cn.bing.com/images" target="_blank">必应识图</a>
+                    </li>
+                    <li><a href="http://pic.sogou.com/" target="_blank">搜狗识图</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="ruanjian" class="zhutikuang clearfix">
+        <div class="tab"><span><i class="icon-save"></i> 软件工具</span>
+            <ul class="clearfix">
+                <li class="current">精品软件</li>
+                <li>在线工具</li>
+            </ul>
+        </div>
+        <div class="sites-details clearfix">
+            <div class="show">
+                <ul class="ul-content">
+                    <li><a href="http://love.appinn.com/" target="_blank">我最喜欢的软件</a>
+                    </li>
+                    <li><a href="https://emlvirus.gitbooks.io/windows-apps-that-amaze-us/content/"
+                            target="_blank">windwos绝赞应用</a>
+                    </li>
+                    <li><a href="http://msdn.itellyou.cn/" target="_blank">MSDN我告诉你</a>
+                    </li>
+                    <li><a href="http://www.52pojie.cn/" target="_blank">吾爱破解</a>
+                    </li>
+                    <li><a href="http://www.xuepojie.com/forum.php?mod=guide&amp;view=newthread" target="_blank">学破解</a>
+                    </li>
+                    <li><a href="http://www.appinn.com/" target="_blank">小众软件</a>
+                    </li>
+                    <li><a href="http://www.iplaysoft.com/" target="_blank">异次元软件</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul-content">
+                    <li><a href="http://vip.ifkdy.com/" target="_blank">疯狂vip视频解析</a>
+                    </li>
+                    <li><a href="http://www.toolfan.cn/" target="_blank">ToolFan</a>
+                    </li>
+                    <li><a href="http://tool.mkblog.cn/" target="_blank">孟坤工具箱</a>
+                    </li>
+                    <li><a href="http://www.webdog.cn/" target="_blank">地图制作</a>
+                    </li>
+                    <li><a href="http://soogif.com/" target="_blank">GIF工具</a>
+                    </li>
+                    <li><a href="http://www.51240.com/" target="_blank">便民查询网</a>
+                    </li>
+                    <li><a href="http://24mail.chacuo.net/" target="_blank">十分钟邮箱</a>
+                    </li>
+                    <li><a href="http://www.99cankao.com/" target="_blank">99参考计算网</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="zixue" class="zhutikuang clearfix">
+        <div class="tab"><span><i class="icon-pencil"></i> 学习天堂</span>
+            <ul class="zixuetab">
+                <li class="current">在线课程</li>
+                <li>TED</li>
+                <li>文库</li>
+            </ul>
+        </div>
+        <div class="sites-details clearfix">
+            <div class="show">
+                <ul class="ul-content">
+                    <li><a href="http://www.imooc.com/" target="_blank">慕课网</a>
+                    </li>
+                    <li><a href="http://study.163.com/" target="_blank">网易云课堂</a>
+                    </li>
+                    <li><a href="http://www.icourse163.org/" target="_blank">中国大学MOOC</a>
+                    </li>
+                    <li><a href="https://www.shiyanlou.com/courses/" target="_blank">实验楼</a>
+                    </li>
+                    <li><a href="https://ke.qq.com/" target="_blank">腾讯课堂</a>
+                    </li>
+                    <li><a href="http://open.163.com/" target="_blank">网易公开课</a>
+                    </li>
+                    <li><a href="http://mooc.guokr.com/" target="_blank">MOOC学院</a>
+                    </li>
+                    <li><a href="https://www.coursera.org/" target="_blank">Coursera</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul-content">
+                    <li><a href="http://www.ted.com/" target="_blank">TED官网</a>
+                    </li>
+                    <li><a href="http://www.kekenet.com/Article/videolis/tedspeech/" target="_blank">可可英语</a>
+                    </li>
+                    <li><a href="http://open.163.com/ted/" target="_blank">网易TED</a>
+                    </li>
+                    <li><a href="http://edu.youku.com/ted" target="_blank">优酷TED</a>
+                    </li>
+                    <li><a href="http://open.sina.com.cn/school/id_57/" target="_blank">新浪TED</a>
+                    </li>
+                    <li><a href="http://v.qq.com/vplus/ted" target="_blank">腾讯TED</a>
+                    </li>
+                    <li><a href="http://list.iqiyi.com/www/12/---2127----------4-1----.html" target="_blank">爱奇艺TED</a>
+                    </li>
+                    <li><a href="http://www.acfun.cn/a/aa5002167" target="_blank">A站TED</a>
+                    </li>
+                    <li><a href="http://www.acfun.cn/a/aa5002167" target="_blank">TED演讲集</a>
+                    </li>
+                    <li><a href="http://www.tingvoa.com/TED/" target="_blank">VOA英语网</a>
+                    </li>
+                    <li><a href="http://www.ximalaya.com/zhubo/1219164/" target="_blank">喜马拉雅TED</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul-content">
+                    <li><a href="http://wenku.baidu.com/" target="_blank">百度文库</a>
+                    </li>
+                    <li><a href="http://www.docin.com/" target="_blank">豆丁网</a>
+                    </li>
+                    <li><a href="http://www.doc88.com/" target="_blank">道客巴巴</a>
+                    </li>
+                    <li><a href="http://doc.mbalib.com/" target="_blank">智库文档</a>
+                    </li>
+                    <li><a href="http://www.dajudeng.com/" target="_blank">大桔灯</a>
+                    </li>
+                    <li><a href="http://www.cnki.net/" target="_blank">中国知网</a>
+                    </li>
+                    <li><a href="http://ishare.iask.sina.com.cn/" target="_blank">爱问共享</a>
+                    </li>
+                    <li><a href="http://wenku.it168.com/" target="_blank">IT168文库</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./EMoon_files/jquery.min.js.下载"></script>
+    <script src="./EMoon_files/main.min.js.下载"></script>
+
+
+
+</body>
+
+</html>
