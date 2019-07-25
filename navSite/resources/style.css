@@ -38,7 +38,7 @@ a {
 }
 
 body {
-	background: #f3f2f1;
+	background: #333030;
 	font-size: 14px;
 	font-family: "微软雅黑"
 }
@@ -59,7 +59,7 @@ a:hover {
 
 #top {
 	height: 95px;
-	background: #303030
+	background: #333030
 }
 
 #top .header {
