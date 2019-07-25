@@ -257,7 +257,7 @@ a:hover {
 
 .zhutikuang {
 	width: 987px;
-	background-color: #333030;
+	background-color: #27272767;
 	margin: 20px auto 0;
 	min-height: 50px;
 	position: relative
@@ -317,8 +317,8 @@ a:hover {
 	line-height: 36px;
 	text-align: center;
 	font-size: 14px;
-	border-right: 1px solid #333030;
-	border-bottom: 1px solid #333030
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000
 }
 
 .zhutikuang .sites-details div .ul-content li.important a {
