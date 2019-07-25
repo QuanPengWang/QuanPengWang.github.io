@@ -53,7 +53,7 @@ a {
 }
 
 a:hover {
-	color: #eb6a01;
+	color: #16b1b1b7;
 	text-decoration: underline
 }
 
@@ -89,7 +89,7 @@ a:hover {
 }
 
 #top .header .serchArea .cat_btn span.active {
-	background-color: #b9282f;
+	background-color: #aa00092a;
 	color: #fff
 }
 
@@ -116,7 +116,7 @@ a:hover {
 	width: 64px;
 	height: 26px;
 	line-height: 26px;
-	background-color: #b9282f;
+	background-color: #1a96968a;
 	color: #fff;
 	text-align: center;
 	font-size: 13px;
@@ -137,7 +137,7 @@ a:hover {
 	padding: 6px 13px;
 	border: 0;
 	outline: 0;
-	background-color: #b9282f;
+	background-color: #1a96968a;
 	color: #fff;
 	font-size: 14px;
 	cursor: pointer;
@@ -165,7 +165,7 @@ a:hover {
 }
 
 #cebian li:hover {
-	background-color: #b9282f
+	background-color: #1a96968a
 }
 
 #cebian li:last-child {
@@ -275,7 +275,7 @@ a:hover {
 	width: 100px;
 	text-align: center;
 	font-size: 15px;
-	background-color: #b9282f;
+	background-color: #1a96968a;
 	color: #fff;
 	font-weight: bold
 }
@@ -292,14 +292,14 @@ a:hover {
 }
 
 .zhutikuang .tab ul li:hover {
-	color: #b9282f
+	color: #1a96968a
 }
 
 .zhutikuang .tab ul li.current {
 	background-color: #fff;
-	color: #b9282f;
+	color: #1a96968a;
 	font-weight: bold;
-	border-bottom: 1px solid #b9282f
+	border-bottom: 1px solid #1a96968a
 }
 
 .zhutikuang .sites-details div {
@@ -322,7 +322,7 @@ a:hover {
 }
 
 .zhutikuang .sites-details div .ul-content li.important a {
-	color: #e13f3f;
+	color: #1a96968a;
 	font-weight: bold
 }
 
@@ -331,14 +331,14 @@ a:hover {
 }
 
 .zhutikuang .sites-details div .ul-content li a:hover {
-	color: #b9282f;
+	color: #1a96968a;
 	background-color: #fbfbfb;
 	text-decoration: underline
 }
 
 .zhutikuang .sites-details div .ul-content li.small-category {
 	background: url("../images/xiaofenlei.gif") no-repeat 24px -1px;
-	color: #e13f3f
+	color: #1a96968a
 }
 
 .detail-sites {
@@ -355,6 +355,6 @@ a:hover {
 }
 
 .detail-sites li a:hover {
-	color: #b9282f;
+	color: #1a96968a;
 	text-decoration: underline
 }
