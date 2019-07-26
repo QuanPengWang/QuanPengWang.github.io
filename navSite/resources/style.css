@@ -38,7 +38,7 @@ a {
 }
 
 body {
-	background: #000000;
+	background: #ffffff;
 	font-size: 14px;
 	font-family: "微软雅黑"
 }
@@ -48,7 +48,7 @@ img {
 }
 
 a {
-	color: #8a8d8f9d;
+	color: #817f7f;
 	text-decoration: none
 }
 
@@ -117,7 +117,7 @@ a:hover {
 	height: 26px;
 	line-height: 26px;
 	background-color: #1a96968a;
-	color: #fff;
+	color: #ffffff;
 	text-align: center;
 	font-size: 13px;
 	cursor: pointer
@@ -138,7 +138,7 @@ a:hover {
 	border: 0;
 	outline: 0;
 	background-color: #1a96968a;
-	color: #ece3e3bb;
+	color: #ffffff;
 	font-size: 14px;
 	cursor: pointer;
 	margin-right: 13px;
@@ -151,13 +151,13 @@ a:hover {
 	left: 50%;
 	top: 175px;
 	margin-left: 506px;
-	border: 1px solid #333030
+	border: 1px solid #ffffff
 }
 
 #cebian li {
 	width: 86px;
 	font-size: 15px;
-	background-color: #333030;
+	background-color: #ffffff;
 	height: 30px;
 	text-align: center;
 	border-bottom: 1px solid #333030;
@@ -176,7 +176,7 @@ a:hover {
 #cebian li a {
 	cursor: pointer;
 	text-decoration: none;
-	color: rgb(156, 156, 156);
+	color: #ffffff;
 	display: block
 }
 
@@ -186,7 +186,7 @@ a:hover {
 
 .index-tj {
 	width: 987px;
-	background-color: #333030;
+	background-color: #ffffff;
 	margin: 10px auto 0
 }
 
@@ -230,7 +230,7 @@ a:hover {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	color: #333030;
+	color: #ffffff;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap
@@ -257,7 +257,7 @@ a:hover {
 
 .zhutikuang {
 	width: 987px;
-	background-color: #27272767;
+	background-color: #ffffff;
 	margin: 20px auto 0;
 	min-height: 50px;
 	position: relative
@@ -266,7 +266,7 @@ a:hover {
 .zhutikuang .tab {
 	width: 987px;
 	height: 37px;
-	border-bottom: 1px solid #bbb4b4
+	border-bottom: 1px solid #ffffff
 }
 
 .zhutikuang .tab span {
@@ -275,8 +275,8 @@ a:hover {
 	width: 100px;
 	text-align: center;
 	font-size: 15px;
-	background-color: #1c4e4e59;
-	color: #ece3e3;
+	background-color: #23888898;
+	color: #36308a94;
 	font-weight: bold
 }
 
@@ -286,13 +286,13 @@ a:hover {
 	padding: 0 24px;
 	line-height: 36px;
 	font-size: 14px;
-	color: #ece3e3;
+	color: #817f7f;
 	overflow: hidden;
 	cursor: pointer
 }
 
 .zhutikuang .tab ul li:hover {
-	color: #ece3e3bb
+	color: #000000
 }
 
 .zhutikuang .tab ul li.current {
@@ -317,8 +317,8 @@ a:hover {
 	line-height: 36px;
 	text-align: center;
 	font-size: 14px;
-	border-right: 1px solid #000000;
-	border-bottom: 1px solid #000000
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff
 }
 
 .zhutikuang .sites-details div .ul-content li.important a {
@@ -332,7 +332,7 @@ a:hover {
 
 .zhutikuang .sites-details div .ul-content li a:hover {
 	color: #1a96968a;
-	background-color: #333030;
+	background-color: #ffffff;
 	text-decoration: underline
 }
 
